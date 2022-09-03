@@ -1,0 +1,474 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.clear {
+  clear: both;
+}
+.text-white {
+  color: #fff !important;
+}
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.col-half {
+  width: 50%;
+}
+.col-third {
+  width: 33.3333%;
+}
+.col-full {
+  width: 100%;
+}
+.box-sizing {
+  box-sizing: border-box !important;
+}
+.mt-8 {
+  margin-top: 8px;
+}
+.mt-16 {
+  margin-top: 16px;
+}
+.float-right {
+  float: right;
+}
+#main {
+}
+/* End Header */
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+  background-color: #000;
+  z-index: 1;
+}
+#nav {
+  display: inline-block;
+}
+#nav li {
+  position: relative;
+  line-height: 46px;
+}
+#nav > li {
+  display: inline-block;
+}
+#nav li a {
+  text-decoration: none;
+  padding: 0 24px;
+  display: inline-block;
+}
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+#nav > li:hover > a {
+  color: #000;
+  background-color: #ccc;
+}
+#nav > li:hover .subnav {
+  display: block;
+}
+#nav .subnav {
+  position: absolute;
+  top: 46px;
+  left: 0;
+  display: none;
+  list-style-type: none;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  min-width: 160px;
+}
+#nav .subnav a {
+  color: #000;
+  display: block;
+  padding: 0 12px;
+  line-height: 38.5px;
+}
+#nav .subnav li:hover a {
+  background-color: #ccc;
+}
+#header .ti-angle-down {
+  font-size: 10px;
+}
+#header .search-btn,
+#header .mobile-menu-btn {
+  float: right;
+  text-align: center;
+}
+#header .ti-search,
+#header .ti-menu {
+  color: #ccc;
+  font-size: 18px;
+  display: block;
+  padding: 14px 22px;
+}
+#header .search-btn:hover {
+  color: #fff;
+  background-color: #f44336;
+  cursor: pointer;
+}
+#header .mobile-menu-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+#header .mobile-menu-btn:hover {
+  background-color: #ccc;
+}
+#header .mobile-menu-btn:hover .ti-menu {
+  color: #000;
+}
+/* Begin Header */
+/* Begin Slider */
+#slider {
+  position: relative;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url(../image/slider/slider-image.jpg) top center / cover no-repeat;
+}
+#slider .text-content {
+  position: absolute;
+  left: 50%;
+  bottom: 32px;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+}
+#slider .text-heading {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-shadow: 0 0 1px #000;
+}
+#slider .text-description {
+  margin: 15px 0;
+  text-shadow: 0 0 1px #000;
+}
+/* End Slider */
+/* Begin Content */
+#content {
+}
+#content .content-section {
+  width: 800px;
+  max-width: 96%;
+  padding: 64px 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#content .text-heading {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  line-height: 45px;
+}
+#content .text-sub-heading {
+  margin: 15px 0;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 22.5px;
+  opacity: 0.6;
+}
+#content .text-description {
+  margin-bottom: 15px;
+  text-align: justify;
+  line-height: 22.5px;
+}
+#content .member-info {
+  padding: 32px 0;
+}
+#content .member-name {
+  margin: 15px 0;
+  line-height: 22.5px;
+}
+#content .member-image {
+  width: 60%;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+#content .tour-dates {
+  background-color: #000;
+}
+#content .ticket-status {
+  background-color: #fff;
+  margin-top: 33px;
+  text-align: left;
+  display: block;
+  list-style-type: none;
+}
+#content .ticket-status li {
+  color: #757575;
+  padding: 8px 16px;
+  line-height: 22.5px;
+  border-bottom: 1px solid #ccc;
+}
+#content .sold-out {
+  background-color: #f44336;
+  color: #fff;
+  padding: 0 8px;
+  margin-left: 16px;
+  line-height: 22.5px;
+  display: inline-block;
+}
+#content .number3 {
+  float: right;
+  margin-right: 16px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0 8px;
+}
+#content .place-list {
+  padding: 16px 0px 48px;
+}
+#content .place-image {
+  width: 100%;
+  display: block;
+}
+#content .place-image:hover {
+  opacity: 0.6;
+}
+#content .place-info {
+  background-color: #fff;
+  text-align: left;
+  padding: 16px;
+}
+#content .place-name,
+#content .place-time,
+#content .place-description {
+  margin-bottom: 15px;
+}
+#content .place-name {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22.5px;
+}
+#content .place-time {
+  opacity: 0.6;
+}
+#content .place-description {
+  line-height: 22.5px;
+}
+.btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+.btn:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+/* Begin Contact */
+.contact-content {
+  padding: 32px 0 48px;
+}
+.contact-info {
+  text-align: left;
+  font-size: 18px;
+  line-height: 27px;
+}
+.contact-info i {
+  width: 30px;
+  display: inline-block;
+}
+.contact-info a {
+  color: #085797;
+}
+.contact-info a:hover {
+  color: #0947f3;
+}
+.form-control {
+  width: 100%;
+  display: block;
+  font-size: 15px;
+  line-height: 22.5px;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.map-image {
+  width: 100%;
+  filter: grayscale(0.5);
+}
+/* End Contact */
+/* End Content */
+#footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+#footer .social-list {
+  font-size: 24px;
+}
+#footer .social-list a {
+  text-decoration: none;
+  color: #000;
+  opacity: 0.6;
+  font-weight: 400;
+  line-height: 24px;
+}
+#footer .social-list a:hover {
+  opacity: 0.3;
+}
+#footer .copy-right {
+  color: #000;
+  opacity: 0.6;
+  line-height: 22.5px;
+  margin: 15px 0;
+}
+#footer .copy-right a {
+  color: #000;
+}
+/* Begin Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.modal-container {
+  background-color: #fff;
+  width: 900px;
+  max-width: calc(100% - 32px);
+  min-height: 472.281px;
+  position: relative;
+  animation: modalFadein ease 0.5s;
+}
+.modal-header {
+  background-color: #009688;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tickets-header {
+  font-size: 30px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 4px;
+  line-height: 45px;
+  margin: 10px 0;
+  padding: 32px 0;
+}
+.ti-bag {
+  margin-right: 16px;
+}
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.modal-close:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+.modal-close .ti-close {
+  padding: 18px 15px;
+  display: block;
+  color: #fff;
+}
+.modal-body {
+  padding: 16px;
+}
+.modal-label,
+.modal-input {
+  margin-bottom: 15px;
+  display: block;
+}
+.modal-input {
+  width: 100%;
+  font-size: 15px;
+  line-height: 22.5px;
+  box-sizing: border-box;
+  border: 1px solid rgb(204, 204, 204);
+  padding: 8px;
+}
+.ti-shopping-cart,
+.ti-user {
+  margin-right: 5px;
+}
+.pay-btn {
+  width: 100%;
+  border: none;
+  background-color: #009688;
+  color: #fff;
+  font-size: 15px;
+  line-height: 22.5px;
+  padding: 16px 0;
+  margin-bottom: 16px;
+  display: block;
+}
+.pay-btn:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+.modal-close2 {
+  position: absolute;
+  background-color: #f44336;
+  color: #fff;
+  bottom: 16px;
+  left: 16px;
+  padding: 8px 16px;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+.modal-close2:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+.modal-close2 .ti-close {
+  font-size: 10px;
+  margin-left: 3px;
+}
+.need-help {
+  position: absolute;
+  bottom: 35px;
+  right: 16px;
+}
+.help {
+  color: #2196f3;
+}
+.open {
+  display: flex;
+}
+@keyframes modalFadein {
+  from {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* End Modal */
